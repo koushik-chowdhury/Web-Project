@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Job Application <span id="small">(Web)</span></h1>
+        </div>
+        <form action="">
+            <div class="form">
+                <div class="field">
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your first name">
+                </div>
+                <div class="field">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="Enter your last name">
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email" inputmode="email">
+                </div>
+                <div class="field">
+                    <label for="role">Job Role</label>
+                    <select name="occupation" id="occupation">
+                        <option value="">Select job role</option>
+                        <option value="design">Front End Developer</option>
+                        <option value="developer">Back End Developer</option>
+                        <option value="full stack">Full Stack Developer</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" cols="50" rows="4"></textarea>
+                </div>
+                <div class="field">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" placeholder="Enter city name">
+                </div>
+                <div class="field">
+                    <label for="pin">Pin Code</label>
+                    <input type="number" name="pin" id="pin" placeholder="Enter your city pin" inputmode="numeric">
+                </div>
+
+                <div class="field">
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="field">
+                    <label for="cv">Upload Your CV</label>
+                    <input type="file" name="cv" id="cv">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
