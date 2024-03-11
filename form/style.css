@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #cccccc;
+}
+#small{
+    font-size: 18px;
+}
+.container{
+    background-color: #ffffff;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 50px 0 0 300px;
+    padding: 15px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    outline: none;
+}
+input,
+select,
+textarea{
+    padding: 12px 8px; 
+    background-color: white;
+    font-size: 14px;
+    border: 2px solid #bfb9b9;
+    border-radius: 5px;
+}
+input:focus{
+    outline-color:#ff0000;
+}
+textarea:focus{
+    outline-color:#ff0000;
+}
