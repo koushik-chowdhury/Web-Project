@@ -1,0 +1,41 @@
+@media(max-width:460px){
+
+    /* NAVBAR  */
+
+    .rightbar{
+        position: absolute;
+        display:flex;
+        background-color: #000000;
+        width: 100%;
+        gap: 1rem;
+        top: 100%;
+        padding:10px 15px;
+
+    }
+    .rightbar{
+        flex-direction: column;
+    }
+    .navbar{
+        padding: 5% 0%;
+    }
+    .rightbar a{
+        width: 100%;
+        color: white;
+    }
+    .leftbar{
+        padding-left: 15px;
+    }
+    .moon{
+        position: absolute;
+        left: 75%;
+        font-size: 20px;
+        color: black;
+    }
+    .bar{
+        position: absolute;
+        left: 90%;
+        font-size: 20px;
+        color: black;
+        display: block;
+    }
+}
