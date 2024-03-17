@@ -46,3 +46,18 @@ header {
 }
 
 /* NAV END  */
+
+
+/* MAIN SECTION  */
+
+.hero{
+  display: flex;
+  margin: 0% 0% 0% 15%;
+  gap: 5rem;
+  padding-top: 88px;
+  border: 1px solid black;
+  max-width: 935px;
+}
+.profile img{
+  width: 200px;
+}

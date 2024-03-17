@@ -4,7 +4,7 @@
 
     .rightbar{
         position: absolute;
-        display:flex;
+        display:none;
         background-color: #000000;
         width: 100%;
         gap: 1rem;
