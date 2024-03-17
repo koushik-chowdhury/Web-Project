@@ -11,18 +11,27 @@ body{
 }
 .container{
     background-color: #ffffff;
-    max-width: 600px;
+    /* max-width: 700px; */
     border-radius: 10px;
-    margin: 35px 0 0 444px;
+    margin: 4% 30% ;
     padding: 15px;
     box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);;
 }
+.form{
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .field{
-    max-width: 600px;
+    /* max-width: 600px; */
     display: flex;
     flex-direction: column;
     outline: none;
     padding: 8px;
+}
+.area{
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 input,
 select,
