@@ -2,9 +2,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Universal CSS */
+body{
+  background-color: #fdfbfe;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 600;
+  color: #272329;
+  line-height: 4rem;
+}
+h3{
+  color: #766a7c;
+  font-size: 1.3rem;
+}
+p{
+  color: #766a7c;;
+}
+/* UNIVERSAL END  */
+
+/* HEADER SECTION  */
 
 .rightbar a {
   text-decoration: none;
@@ -18,10 +40,8 @@
   color: #b257e0;
 }
 
-/* HEADER SECTION  */
-
 header {
-  /* border: 1px solid black; */
+  /* border: 1px solid black; hsl(233, 69%, 61%) */
   position: sticky;
   top: 0;
   background-color: white;
@@ -50,14 +70,70 @@ header {
 
 /* MAIN SECTION  */
 
+/* HERO  */
 .hero{
   display: flex;
   margin: 0% 0% 0% 15%;
-  gap: 5rem;
-  padding-top: 88px;
-  border: 1px solid black;
+  gap: 8rem;
+  padding-top: 120px;
   max-width: 935px;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
 }
+
+/* END HERO  */
+
 .profile img{
-  width: 200px;
+  width: 300px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.social{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.5rem;
+  /* padding: 0px 5px; */
+}
+.social a i{
+  color: #b257e0;
+  cursor: pointer;
+  transition: 0.3s ease-out all;
+  padding: 5px;
+}
+
+.social a i:hover{
+  color: #ffffff;
+  transform: scale(1.1);
+  background-color: #b257e0;
+  border-radius: 10%;
+
+
+}
+
+.intro{
+  max-width: 320px;
+}
+.intro h3{
+  margin-top: 0.8rem;
+  text-align: justify;
+}
+.intro p{
+  margin-top: 1.5rem;
+  padding-bottom: 10px;
+}
+button{
+  padding: 1rem;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  background-color: #b257e0;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+button:hover{
+  transform: translateY(.05rem);
+  background-color: #bc68e5;
 }
