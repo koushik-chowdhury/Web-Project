@@ -2,51 +2,83 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
-  font-family: 'Poppins', sans-serif;
+  /* border: 1px solid red; */
+  font-family: "Poppins", sans-serif;
 }
 
-/* Universal CSS */
-body{
-  background-color: #fdfbfe;
+/*  ------------------------- ROOT  ------------------------- */
+
+:root {
+  /* --- COLOR --- */
+
+  --hue-color: 280;
+  --pri-color: hsl(var(--hue-color), 69%, 61%);
+  --white-color: hsl(0, 0%, 100%);
+  --hover-color-pink: hsl(var(--hue-color), 57%, 53%);
+  --hover-color-white: hsl(0, 0%, 100%);
+  --hover-back-color: hsl(var(--hue-color), 67%, 53%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --h3-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+
+  /* --- FONT SIZE, WEIGHT, HEIGHT --- */
+
+  --title-font-size-3: 3rem;
+  --title-font-weight-6: 600;
+  --title-line-height-4: 4rem;
+  --h3-font-size-13: 1.3rem;
+  --h1-color: hsl(var(--hue-color), 8%, 15%);
+  --h1-font-size: 2.25rem;
 }
 
-h1{
-  font-size: 3rem;
-  font-weight: 600;
-  color: #272329;
-  line-height: 4rem;
+/* -------------------------  Universal CSS -------------------------  */
+html{
+  scroll-behavior: smooth;
 }
-h3{
-  color: #766a7c;
-  font-size: 1.3rem;
+body {
+  background-color: var(--body-color);
 }
-p{
-  color: #766a7c;;
+h1 {
+  font-size: var(--title-font-size-3);
+  font-weight: var(--title-font-weight-6);
+  color: var(--title-color);
+  line-height: var(--title-line-height-4);
 }
-/* UNIVERSAL END  */
+h3 {
+  color: var(--h3-color);
+  font-size: var(--h3-font-size-13);
+}
+p {
+  color: var(--text-color);
+}
+a {
+  text-decoration: none;
+}
+/* -------------------------  UNIVERSAL END -------------------------  */
 
-/* HEADER SECTION  */
+/* ------------------------- NAV SECTION -------------------------  */
 
 .rightbar a {
   text-decoration: none;
-  color: #0000ffd2;
-  font-weight: 32px;
+  color: var(--pri-color);
+  font-weight: var(--title-font-weight-6);
   cursor: pointer;
-  transition: 0.2s;
   font-size: 18px;
+  padding: 5px;
+  transition: 0.5s ease-in-out all;
 }
-.rightbar a:hover{
-  color: #b257e0;
+.rightbar a:hover {
+  background-color: var(--pri-color);
+  color: var(--hover-color-white);
+  border-radius: 5px;
 }
-
 header {
-  /* border: 1px solid black; hsl(233, 69%, 61%) */
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: var(--white-color);
   z-index: 100;
-  box-shadow: 0px -1px 8px gray;
+  box-shadow: 0px -4px 8px gray;
 }
 .navbar {
   display: flex;
@@ -61,79 +93,148 @@ header {
   gap: 3rem;
   align-items: center;
 }
-.bar{
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation .fa-solid {
+  font-size: 1.4rem;
+  color: var(--pri-color);
+}
+.navigation .bar {
   display: none;
 }
 
-/* NAV END  */
+/* ------------------------- NAV END ------------------------- */
 
+/* ------------------------- MAIN SECTION ------------------------- */
 
-/* MAIN SECTION  */
+/* ------------------------- HERO ------------------------- */
 
-/* HERO  */
-.hero{
+.hero {
   display: flex;
   margin: 0% 0% 0% 15%;
   gap: 8rem;
-  padding-top: 120px;
   max-width: 935px;
   justify-content: center;
   align-items: center;
   height: 600px;
 }
 
-/* END HERO  */
+/* -------------------------  HERO IMAGE SECTION -------------------------  */
 
-.profile img{
+.profile img {
   width: 300px;
+  background-color: var(--pri-color);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
-.social{
+
+/* -------------------------  END IMAGE SECTION -------------------------  */
+
+/*  ------------------------- SOCIAL SECTION START  ------------------------- */
+
+.social {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   /* padding: 0px 5px; */
 }
-.social a i{
-  color: #b257e0;
+.social a {
+  color: var(--pri-color);
   cursor: pointer;
-  transition: 0.3s ease-out all;
-  padding: 5px;
+  transition: 0.5s ease-in-out all;
+  /* padding: 5px; */
+  height: 40px;
+  width: 40px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
-
-.social a i:hover{
-  color: #ffffff;
+.social a:hover {
+  color: var(--hover-color-white);
   transform: scale(1.1);
-  background-color: #b257e0;
-  border-radius: 10%;
-
-
+  background-color: var(--hover-back-color);
+  border-radius: 50%;
+}
+.social a .fa-brands {
+  font-size: 1.6rem;
 }
 
-.intro{
+/* -------------------------  END SOCIAL SECTION  -------------------------  */
+
+.intro {
   max-width: 320px;
 }
-.intro h3{
+.intro h3 {
   margin-top: 0.8rem;
   text-align: justify;
 }
-.intro p{
+.intro p {
   margin-top: 1.5rem;
   padding-bottom: 10px;
 }
-button{
+button {
   padding: 1rem;
-  color: #ffffff;
+  color: var(--white-color);
   border-radius: 0.5rem;
-  background-color: #b257e0;
+  background-color: var(--pri-color);
   font-weight: 500;
   font-size: 16px;
   border: none;
   margin-top: 20px;
   cursor: pointer;
 }
-button:hover{
-  transform: translateY(.05rem);
-  background-color: #bc68e5;
+button:hover {
+  /* transform: translateY(.05rem); */
+  background-color: var(--hover-back-color);
+}
+
+.scroll-down {
+  display: flex;
+  position: relative;
+  left: 412px;
+  bottom: 55px;
+  width: 132px;       /* ERROR */
+}
+.scroll-down a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--pri-color);
+  transition: 0.3s;
+}
+.scroll-down a:hover {
+  transform: translateY(0.25rem);
+}
+.scroll-text {
+  font-size: 0.845rem;
+  color: var(--title-color);
+  font-weight: var(--title-font-weight-6);
+  margin-right: 0.25rem;
+}
+.scroll-down .fa-computer-mouse {
+  font-size: 1.5rem;
+}
+
+/* ------------------------- END HERO -------------------------  */
+
+/* ------------------------- ABOUT ME -------------------------  */
+
+.about h1{
+  font-size: var(--h1-font-size);
+  font-weight: var(--title-font-weight-6);
+}
+.about{
+  text-align: center;
+  padding-top: 80px;
+}
+.about-details{
+  margin: 1% 15%;
+}
+.photo img{
+  width: 320px;
+  border-radius: 10px;
 }

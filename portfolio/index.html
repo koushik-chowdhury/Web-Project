@@ -1,58 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/47435710d5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!---------- BODY ---------->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="media.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <script src="https://kit.fontawesome.com/47435710d5.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <!-- NAVIGATION BAR -->
 
-<body>
-  <header class="scroll">
-    <div class="navbar">
-      <div class="leftbar">
-        <p>Koushik</p>
+    <header class="scroll">
+      <div class="navbar">
+        <div class="leftbar">
+          <p>Koushik</p>
+        </div>
+        <div class="rightbar">
+          <a href="#hero">Home</a>
+          <a href="#About">About</a>
+          <a href="#">Skills</a>
+          <a href="#">Service</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact Me</a>
+        </div>
+        <div class="navigation dark">
+          <a href="">
+            <i class="fa-solid moon fa-moon"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-bars bar"></i>
+          </a>
+        </div>
       </div>
-      <div class="rightbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Service</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact Me</a>
-      </div>
-      <a href=""><i class="fa-solid moon fa-moon"></i></a>
-      <a href=""><i class="fa-solid fa-bars bar"></i></a>
-    </div>
-  </header>
+    </header>
+    <!---------- END NAVIGATION  ---------->
 
-  <!-- MAIN SECTION  -->
-  <main>
-    <div class="hero">
-      <div class="social">
-        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href=""><i class="fa-brands fa-github"></i></a>
-        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-      </div>
-      <div class="intro">
-        <h1>Hi I'm Koushik</h1>
-        <h3>FullStack Developer</h3>
-        <p>High level experience in web design and development knowledge, producing quality work.</p>
-        <button>Contact Me <i class="fa-regular fa-paper-plane"></i></button>
-      </div>
-      <div class="profile">
-        <img
-          src="https://statusneo.com/wp-content/uploads/2023/02/MicrosoftTeams-image551ad57e01403f080a9df51975ac40b6efba82553c323a742b42b1c71c1e45f1.jpg"
-          alt="Boy">
-      </div>
-    </div>
-  </main>
-</body>
+    <!---------- MAIN SECTION  ---------->
 
+    <main>
+      <!---------- Hero Section ---------->
+      <section id="hero">
+        <div class="hero">
+          <div class="social">
+            <a
+              href="https://www.linkedin.com/in/koushik-chowdhury/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/koushik-chowdhury" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://twitter.com/csakoushik" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+          <div class="intro">
+            <h1>Hi I'm Koushik</h1>
+            <h3>FullStack Developer</h3>
+            <p>
+              High level experience in web design and development knowledge,
+              producing quality work.
+            </p>
+            <button>
+              Contact Me <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </div>
+          <div class="profile">
+            <img src="image/profile image.png" alt="Boy" />
+          </div>
+        </div>
+        <div class="scroll-down">
+          <a href="#About">
+            <i class="fa-solid fa-computer-mouse"></i>
+            <span class="scroll-text">Scroll Down</span>
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+        </div>
+      </section>
+
+      <!---------- End Hero Section ---------->
+
+      <!----------- ABOUT SECTION ------------>
+      <section id="About">
+        <div class="about">
+          <h1>About Me</h1>
+          <p>My Introduction</p>
+        </div>
+        <div class="about-details">
+          <div class="photo">
+            <img src="image/koushik image.jpg" alt="koushik">
+          </div>
+          <div class="info">
+
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
