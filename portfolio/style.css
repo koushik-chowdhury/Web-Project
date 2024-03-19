@@ -14,22 +14,29 @@
   --hue-color: 280;
   --pri-color: hsl(var(--hue-color), 69%, 61%);
   --white-color: hsl(0, 0%, 100%);
+  --h1-color: hsl(var(--hue-color), 8%, 15%);
+  --h3-color: hsl(var(--hue-color), 8%, 45%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
   --hover-color-pink: hsl(var(--hue-color), 57%, 53%);
   --hover-color-white: hsl(0, 0%, 100%);
   --hover-back-color: hsl(var(--hue-color), 67%, 53%);
-  --title-color: hsl(var(--hue-color), 8%, 15%);
-  --h3-color: hsl(var(--hue-color), 8%, 45%);
-  --text-color: hsl(var(--hue-color), 8%, 45%);
-  --body-color: hsl(var(--hue-color), 60%, 99%);
 
-  /* --- FONT SIZE, WEIGHT, HEIGHT --- */
+  /* --- FONT SIZE --- */
 
   --title-font-size-3: 3rem;
-  --title-font-weight-6: 600;
-  --title-line-height-4: 4rem;
   --h3-font-size-13: 1.3rem;
-  --h1-color: hsl(var(--hue-color), 8%, 15%);
   --h1-font-size: 2.25rem;
+  --anchor-font-size: 18px;
+
+  /* FONT WEIGHT */
+
+  --title-font-weight-6: 600;
+
+  /* LINE HEIGHT */
+
+  --title-line-height-4: 4rem;
 }
 
 /* -------------------------  Universal CSS -------------------------  */
@@ -64,7 +71,7 @@ a {
   color: var(--pri-color);
   font-weight: var(--title-font-weight-6);
   cursor: pointer;
-  font-size: 18px;
+  font-size: var(--anchor-font-size);
   padding: 5px;
   transition: 0.5s ease-in-out all;
 }
@@ -77,7 +84,7 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--white-color);
-  z-index: 100;
+  z-index: 1;
   box-shadow: 0px -4px 8px gray;
 }
 .navbar {
@@ -119,7 +126,7 @@ header {
   max-width: 935px;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 640px;
 }
 
 /* -------------------------  HERO IMAGE SECTION -------------------------  */
@@ -230,6 +237,7 @@ button:hover {
 .about{
   text-align: center;
   padding-top: 80px;
+  margin-bottom: 100px;
 }
 .about-details{
   margin: 1% 15%;
