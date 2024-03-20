@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   font-family: "Poppins", sans-serif;
 }
 
@@ -241,8 +241,24 @@ button:hover {
 }
 .about-details{
   margin: 1% 15%;
+  display: flex;
+  gap: 5rem;
+  text-align: j9*tify;
 }
 .photo img{
   width: 320px;
   border-radius: 10px;
+}
+.info{
+  max-width: 300px;
+}
+.meta-info{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+text-align: center;
+}
+.meta-span span{
+  display: flex;
+  flex-direction: column;
 }
