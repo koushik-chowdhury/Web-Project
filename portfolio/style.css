@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-family: "Poppins", sans-serif;
 }
 
@@ -40,7 +40,7 @@
 }
 
 /* -------------------------  Universal CSS -------------------------  */
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -204,7 +204,7 @@ button:hover {
   position: relative;
   left: 412px;
   bottom: 55px;
-  width: 132px;       /* ERROR */
+  width: 132px; /* ERROR */
 }
 .scroll-down a {
   display: inline-flex;
@@ -230,44 +230,54 @@ button:hover {
 
 /* ------------------------- ABOUT ME -------------------------  */
 
-.about h1{
+.about h1 {
   font-size: var(--h1-font-size);
   font-weight: var(--title-font-weight-6);
 }
-.about{
+.about {
   text-align: center;
   padding-top: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
-.about-details{
+.about-details {
   margin: 1% 15%;
   display: flex;
   gap: 8rem;
   text-align: justify;
+  justify-content: center;
 }
-.photo img{
+.photo img {
   width: 320px;
   border-radius: 10px;
 }
-.info{
+.info {
   max-width: 340px;
 }
-.meta-info{
+.meta-info {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
-text-align: center;
+  text-align: center;
+  margin: 12px 0px 12px 0px;
 }
-.meta-span span{
+.meta-span span {
   display: flex;
   flex-direction: column;
 }
-.info-num{
+.info-num {
   font-size: 1.5rem;
   font-weight: var(--title-font-weight-6);
   color: var(--title-color);
 }
-.info-des{
-  font-size: .875rem;
+.info-des {
+  font-size: 0.875rem;
   color: var(--text-color);
+}
+#hero{
+  border: 2px solid red;
+  height: 100vh;
+}
+#About{
+  border: 2px solid black;
+  height: 100vh;
 }
