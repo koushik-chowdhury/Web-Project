@@ -242,23 +242,32 @@ button:hover {
 .about-details{
   margin: 1% 15%;
   display: flex;
-  gap: 5rem;
-  text-align: j9*tify;
+  gap: 8rem;
+  text-align: justify;
 }
 .photo img{
   width: 320px;
   border-radius: 10px;
 }
 .info{
-  max-width: 300px;
+  max-width: 340px;
 }
 .meta-info{
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 0.5rem;
 text-align: center;
 }
 .meta-span span{
   display: flex;
   flex-direction: column;
+}
+.info-num{
+  font-size: 1.5rem;
+  font-weight: var(--title-font-weight-6);
+  color: var(--title-color);
+}
+.info-des{
+  font-size: .875rem;
+  color: var(--text-color);
 }
