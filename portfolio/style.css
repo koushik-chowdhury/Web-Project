@@ -281,3 +281,13 @@ button:hover {
   border: 2px solid black;
   height: 100vh;
 }
+
+/* ------------------------- END ABOUT ME -------------------------  */
+
+#Skill{
+  height: 100vh;
+  padding-top: 75px;
+}
+.skill-title{
+  text-align: center;
+}
