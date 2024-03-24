@@ -1,4 +1,4 @@
-@media(max-width:460px){
+@media(max-width:600px){
 
     /* NAVBAR  */
 
@@ -37,5 +37,61 @@
         font-size: 20px;
         color: black;
         display: block;
+    }
+
+    /* END NAV BAR */
+    
+    .hero{
+        flex-direction: column-reverse;
+        gap: 2rem;
+        margin: 0%;
+        max-width: 100%;
+    }
+    .social{
+        display: none;
+    }
+
+    /* PROFILE IMAGE */
+
+    .profile img{
+        width: 250px;
+    }
+    .scroll-down{
+        left: 125px;
+        bottom: 15px;
+    }
+    .about-details{
+        flex-direction: column;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .photo img{
+        width: 200px;
+    }
+    button{
+        width: 100%;
+    }
+    .meta-info{
+        margin-top: 1.5rem;
+    }
+    .meta-span{
+        /* background-color: #EEEEF0; */
+        box-shadow: rgba(242, 8, 8, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    .myskill img{
+        width: 45px;
+    }
+    .myskill{
+        row-gap: 0.5rem;
+        column-gap: 1rem;
+        width: 100%;
+    }
+    .skill{
+        /* width:50%; */
+        width: 170px;
+        height: 25vmin;
+        /* padding: 1.5rem; */
     }
 }
