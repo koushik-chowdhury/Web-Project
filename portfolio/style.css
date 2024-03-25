@@ -63,7 +63,7 @@ p {
 a {
   text-decoration: none;
 }
-/* -------------------------  UNIVERSAL END -------------------------  */
+/* -------------------------  UNIVERSAL END -----------------------  */
 
 /* ------------------------- NAV SECTION -------------------------  */
 
@@ -114,9 +114,9 @@ header {
   display: none;
 }
 
-/* ------------------------- NAV END ------------------------- */
+/* ------------------------- NAV END ----------------------- */
 
-/* ------------------------- MAIN SECTION ------------------------- */
+/* ------------------------- MAIN SECTION ------------------------ */
 
 /* ------------------------- HERO ------------------------- */
 
@@ -275,7 +275,6 @@ button:hover {
   color: var(--text-color);
 }
 #hero {
-  border: 2px solid red;
   height: 100vh;
 }
 #About {
@@ -331,6 +330,27 @@ button:hover {
 .skill h3 {
   font-size: var(--small-font-size);
 }
+
+
+/* -------------------------- SKILL END ------------------------ */
+
 #Service{
   height: 100vh;
+  border: 1px solid red;
+
+}
+.service-title{
+  margin-top: 5rem;
+  text-align: center;
+}
+.service-offer{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.our-service{
+  width: 200px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px;
 }
