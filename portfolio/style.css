@@ -365,3 +365,13 @@ button:hover {
   font-size: 1.6rem;
   color: var(--pri-color);
 }
+.bottom-to-top{
+  position: fixed;
+  bottom: 0;
+  font-size: 1.6rem;
+  right: 0;
+}
+.bottom-to-top i{
+  background-color: var(--pri-color);
+  color: var(--white-color);
+}
