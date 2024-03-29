@@ -348,6 +348,7 @@ button:hover {
   gap: 2rem;
   justify-content: center;
   align-items: center;
+  margin-top: 2.5rem;
 }
 .our-service{
   width: 250px;
@@ -365,6 +366,9 @@ button:hover {
   font-size: 1.6rem;
   color: var(--pri-color);
 }
+
+/* Bottom to top */
+
 .bottom-to-top{
   position: fixed;
   bottom: 0;
@@ -374,4 +378,16 @@ button:hover {
 .bottom-to-top i{
   background-color: var(--pri-color);
   color: var(--white-color);
+}
+.view-more{
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.view-more i{
+  font-size: 0.8rem;
+}
+.view-more:hover{
+  transform: translateY(0.25rem);
 }
