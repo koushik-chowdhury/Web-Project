@@ -391,3 +391,9 @@ button:hover {
 .view-more:hover{
   transform: translateY(0.25rem);
 }
+
+/* CONTACT SECTION */
+
+.contact-head{
+  text-align: center;
+}
